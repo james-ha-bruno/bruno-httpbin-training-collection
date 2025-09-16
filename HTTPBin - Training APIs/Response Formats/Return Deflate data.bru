@@ -1,0 +1,19 @@
+meta {
+  name: Return Deflate data
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://httpbin.org/deflate
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

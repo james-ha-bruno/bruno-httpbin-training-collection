@@ -1,0 +1,19 @@
+meta {
+  name: Bearer Auth Prompt
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://httpbin.org/bearer
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

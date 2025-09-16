@@ -1,0 +1,19 @@
+meta {
+  name: Return XML document
+  type: http
+  seq: 7
+}
+
+get {
+  url: https://httpbin.org/xml
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/xml
+}
+
+settings {
+  encodeUrl: false
+}

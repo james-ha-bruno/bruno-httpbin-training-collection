@@ -1,0 +1,19 @@
+meta {
+  name: Return robots.txt rules
+  type: http
+  seq: 6
+}
+
+get {
+  url: https://httpbin.org/robots.txt
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: text/plain
+}
+
+settings {
+  encodeUrl: false
+}

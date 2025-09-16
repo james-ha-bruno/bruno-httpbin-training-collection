@@ -1,0 +1,19 @@
+meta {
+  name: Get - HTTP Headers
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://httpbin.org/headers
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

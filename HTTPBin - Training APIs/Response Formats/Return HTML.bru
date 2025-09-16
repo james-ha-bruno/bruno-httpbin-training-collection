@@ -1,0 +1,19 @@
+meta {
+  name: Return HTML
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://httpbin.org/html
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: text/html
+}
+
+settings {
+  encodeUrl: false
+}

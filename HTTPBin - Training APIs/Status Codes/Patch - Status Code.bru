@@ -1,0 +1,23 @@
+meta {
+  name: Patch - Status Code
+  type: http
+  seq: 3
+}
+
+patch {
+  url: https://httpbin.org/status/:codes
+  body: none
+  auth: inherit
+}
+
+params:path {
+  codes: 200
+}
+
+headers {
+  accept: text/plain
+}
+
+settings {
+  encodeUrl: false
+}

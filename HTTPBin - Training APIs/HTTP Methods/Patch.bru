@@ -1,0 +1,19 @@
+meta {
+  name: Patch
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/patch
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

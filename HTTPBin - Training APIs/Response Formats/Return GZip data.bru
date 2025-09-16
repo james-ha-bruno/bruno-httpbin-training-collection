@@ -1,0 +1,19 @@
+meta {
+  name: Return GZip data
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://httpbin.org/gzip
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

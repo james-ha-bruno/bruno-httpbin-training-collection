@@ -1,0 +1,19 @@
+meta {
+  name: Put
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/put
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

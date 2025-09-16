@@ -1,0 +1,24 @@
+meta {
+  name: Basic Auth Prompt
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://httpbin.org/basic-auth/:user/:password
+  body: none
+  auth: inherit
+}
+
+params:path {
+  password: 1234
+  user: james
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

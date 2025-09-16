@@ -1,0 +1,19 @@
+meta {
+  name: Get - User Agent Header
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://httpbin.org/user-agent
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

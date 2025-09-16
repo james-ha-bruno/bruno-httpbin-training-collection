@@ -1,0 +1,19 @@
+meta {
+  name: Put - Status Code
+  type: http
+  seq: 5
+}
+
+put {
+  url: https://httpbin.org/status/300
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: text/plain
+}
+
+settings {
+  encodeUrl: false
+}

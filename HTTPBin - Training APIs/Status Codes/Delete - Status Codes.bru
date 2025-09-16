@@ -1,0 +1,23 @@
+meta {
+  name: Delete - Status Codes
+  type: http
+  seq: 1
+}
+
+delete {
+  url: https://httpbin.org/status/:codes
+  body: none
+  auth: inherit
+}
+
+params:path {
+  codes: 200
+}
+
+headers {
+  accept: text/plain
+}
+
+settings {
+  encodeUrl: false
+}

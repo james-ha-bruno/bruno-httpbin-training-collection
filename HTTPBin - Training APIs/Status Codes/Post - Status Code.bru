@@ -1,0 +1,23 @@
+meta {
+  name: Post - Status Code
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://httpbin.org/status/:codes
+  body: none
+  auth: inherit
+}
+
+params:path {
+  codes: 400
+}
+
+headers {
+  accept: text/plain
+}
+
+settings {
+  encodeUrl: false
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Return Botli data
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://httpbin.org/brotli
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

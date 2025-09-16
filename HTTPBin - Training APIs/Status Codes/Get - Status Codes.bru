@@ -1,0 +1,23 @@
+meta {
+  name: Get - Status Codes
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://httpbin.org/status/:codes
+  body: none
+  auth: inherit
+}
+
+params:path {
+  codes: 100
+}
+
+headers {
+  accept: text/plain
+}
+
+settings {
+  encodeUrl: false
+}
