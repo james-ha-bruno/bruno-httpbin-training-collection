@@ -1,0 +1,23 @@
+meta {
+  name: Get - Delay Response
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://httpbin.org/delay/:delay
+  body: none
+  auth: inherit
+}
+
+params:path {
+  delay: 1
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

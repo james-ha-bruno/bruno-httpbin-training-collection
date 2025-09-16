@@ -1,0 +1,19 @@
+meta {
+  name: Get - Return UUID4
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://httpbin.org/uuid
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}
