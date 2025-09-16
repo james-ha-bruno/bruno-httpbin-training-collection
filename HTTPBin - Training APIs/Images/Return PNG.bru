@@ -1,0 +1,19 @@
+meta {
+  name: Get - Return PNG
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://httpbin.org/image/png
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: image/png
+}
+
+settings {
+  encodeUrl: false
+}

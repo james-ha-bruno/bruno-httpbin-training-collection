@@ -1,0 +1,19 @@
+meta {
+  name: Get - Return JPEG
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://httpbin.org/image/jpeg
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: image/jpeg
+}
+
+settings {
+  encodeUrl: false
+}

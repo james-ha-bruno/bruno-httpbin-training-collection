@@ -1,0 +1,19 @@
+meta {
+  name: Get - Return SVG
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://httpbin.org/image/svg
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: image/svg+xml
+}
+
+settings {
+  encodeUrl: false
+}

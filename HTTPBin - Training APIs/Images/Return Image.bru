@@ -1,0 +1,19 @@
+meta {
+  name: Get - Return Image
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://httpbin.org/image
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: image/webp
+}
+
+settings {
+  encodeUrl: false
+}
